@@ -11,7 +11,8 @@ import {PageNotFoundComponent} from './../views/404/404.component'
 const appRoutes: Routes = [
     {
         path: 'home',
-        component: HomeComponent
+        component: HomeComponent,
+        data: { state: 'home' }
     },
     {
         path: '',
@@ -19,7 +20,9 @@ const appRoutes: Routes = [
         pathMatch: 'full'
     },
     {
-        path: '**', component: PageNotFoundComponent
+        path: '**',
+        component: PageNotFoundComponent,
+        data: { state: '404' }
     }
 ];
 
