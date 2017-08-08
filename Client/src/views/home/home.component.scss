@@ -1,5 +1,9 @@
-$test: red;
+$test: black;
 
 body {
   background-color: $test;
+}
+
+h1 {
+  font-size: 100px;
 }
